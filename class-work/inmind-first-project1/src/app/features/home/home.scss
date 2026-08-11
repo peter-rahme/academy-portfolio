@@ -1,0 +1,70 @@
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: var(--space-lg);
+  padding-block: var(--space-xl);
+  min-height: calc(100vh - 4.5rem);
+  justify-content: center;
+}
+
+.hero-avatar {
+  width: 9rem;
+  height: 9rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-heading);
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: var(--color-text-on-primary);
+  background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
+  box-shadow: var(--shadow-md);
+}
+
+.hero-text h1 {
+  font-size: 2.75rem;
+  margin-bottom: var(--space-xs);
+}
+
+.tagline {
+  font-size: 1.25rem;
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-md);
+}
+
+.btn-row {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-sm);
+  margin-bottom: var(--space-md);
+  flex-wrap: wrap;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-sm);
+}
+
+.socials a {
+  color: var(--color-text-muted);
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.socials a:hover {
+  color: var(--color-primary);
+  transform: translateY(-2px);
+}
+
+@media screen and (max-width: 600px) {
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+
+  .tagline {
+    font-size: 1.05rem;
+  }
+}
